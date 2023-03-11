@@ -1,0 +1,19 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  margin: 15px 15px 15px 15px;
+}
+
+
+.car-header{
+  background-color: darkviolet;
+  border-radius: 5px;
+}
+
+.car-header h1 {
+  font-family: "Arial Rounded MT Bold";
+  color: white;
+  margin-top: 15px;
+}

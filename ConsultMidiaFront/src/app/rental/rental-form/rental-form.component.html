@@ -1,0 +1,49 @@
+<!--<div>-->
+<!--  <h2>Calcule o valor do aluguel</h2>-->
+<!--  <form (ngSubmit)="calculateRent()" #rentalForm="ngForm">-->
+<!--    <div>-->
+<!--      <label for="cityFrom">Cidade de Origem</label>-->
+<!--      <input type="text" id="cityFrom" name="cityFrom" [(ngModel)]="cityFrom" required>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <label for="cityTo">Cidade de Destino</label>-->
+<!--      <input type="text" id="cityTo" name="cityTo" [(ngModel)]="cityTo" required>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <label for="carType">Tipo de Carro</label>-->
+<!--      <select id="carType" name="carType" [(ngModel)]="carType" required>-->
+<!--        <option value="basic">Básico</option>-->
+<!--        <option value="intermediate">Intermediário</option>-->
+<!--        <option value="luxury">Luxo</option>-->
+<!--      </select>-->
+<!--    </div>-->
+<!--    <button type="submit">Calcular</button>-->
+<!--  </form>-->
+<!--</div>-->
+
+<div>
+  <h2>Calculadora de aluguel de carro</h2>
+  <form (submit)="$event()">
+    <div>
+      <label for="origem">Origem:</label>
+      <input type="text" id="origem" [(ngModel)]="$any">
+    </div>
+    <div>
+      <label for="destino">Destino:</label>
+      <input type="text" id="destino" [(ngModel)]="$any">
+    </div>
+    <div>
+      <label for="tipoCarro">Tipo de carro:</label>
+      <select id="tipoCarro" [(ngModel)]="$any">
+        <option value="basico">Básico</option>
+        <option value="intermediario">Intermediário</option>
+        <option value="luxo">Luxo</option>
+      </select>
+    </div>
+    <button type="submit">Calcular</button>
+  </form>
+  <div *ngIf="distancia && valorAluguel">
+    <p>Distância percorrida: {{distancia}} km</p>
+    <p>Valor do aluguel: R$ {{valorAluguel.toFixed(2)}}</p>
+  </div>
+</div>
