@@ -14,7 +14,7 @@ A execução do projeto requer alguns passos, vamos a eles.
 
 Execute o projeto em uma IDE com suporte e plugins para java e spring boot, preferencialmente `Intellij` ou `Eclipse`.
 
-Depois de executar o projeto backend, acesse `http://localhost:8080/api/pessoas`
+Depois de executar o projeto backend, acesse `http://localhost:8080/api/rental`
 
 ## ACESSE A PASTA POR NOME `ConsultMidiaFront`
 
@@ -22,4 +22,4 @@ Execute o comando `npm install` para fazer o `Builder` corretamente do projeto.
 
 Execute o comando `npm start` para fazer o `Startar` a aplicação frontend.
 
-Com o seu browser aberto, acesse o endereço `http://localhost:4200/pessoas` para visualizar a página de lista de pessoas.
+Com o seu browser aberto, acesse o endereço `http://localhost:4200/rental` para visualizar a página de lista de pessoas.
